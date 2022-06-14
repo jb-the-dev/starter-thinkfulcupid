@@ -40,7 +40,8 @@ main img {
 
 .group {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .item {

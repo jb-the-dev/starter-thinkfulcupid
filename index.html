@@ -20,6 +20,7 @@
 DONE - add groups and items to nav bar
 DONE - build responsive images
 TODO - add join form
+TODO - add single-page navigation
 TODO - build media query for screens larger than 600px
 
 
@@ -42,6 +43,53 @@ TODO - build media query for screens larger than 600px
       <section id="join">
         <img src="images/love.png" alt="ThinkfulCupid - love" />
         <!-- Add join form here -->
+        <h2>Find your perfect match</h2>
+        <form>
+          <div class="group">
+            <label for="email" class="item">Email</label>
+            <input 
+              class="item"
+              id="email" 
+              type="email" 
+              name="email"
+              placeholder="email@example.com"
+              required
+            />
+          </div>
+          <div class="group">
+            <label for="password" class="item">Create a password</label>
+            <input
+              class="item"
+              id="password"
+              type="password"
+              name="password"
+              required
+            />
+          </div>
+          <div class="group">
+            <label for="username" class="item">Username</label>
+            <input
+              class="item"
+              type="text"
+              name="username"
+              required
+            />
+          </div>
+          <div class="group">
+            <label for="gender" class="item">I am a...</label>
+            <select 
+              id="gender" 
+              name="gender" 
+              size="1"
+              class="item">
+              <option value="female">female</option>
+              <option value="male">male</option>
+              <option value="other">other</option>
+              <option value="non-specified">prefer not to specify</option>
+            </select>
+          </div>
+          <button type="submit">Join</button>
+        </form>
       </section>
 
       <!-- About -->
